@@ -1,0 +1,11 @@
+[resource]
+scheduling = "/home/fluxuser/cluster.jgf"
+noverify = true
+
+[[resource.config]]
+hosts = "replicas-node-[1-4]"
+cores = "0-3"
+
+[sched-fluxion-resource]
+traverser = "flexible_largest_fit"
+emit-nslots = true

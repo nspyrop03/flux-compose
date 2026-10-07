@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "resources": [
+    {
+      "type": "xor_slot",
+      "count": 1,
+      "label": "default",
+      "with": [
+        {
+          "type": "core",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "type": "xor_slot",
+      "count": 2,
+      "label": "default",
+      "with": [
+        {
+          "type": "core",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "type": "xor_slot",
+      "count": 3,
+      "label": "default",
+      "with": [
+        {
+          "type": "core",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "system": {
+      "duration": 3600,
+      "durations": {
+        "default": [
+          3601,
+          3602,
+          2603
+        ]
+      }
+    }
+  },
+  "tasks": [
+    {
+      "command": [
+        "sleep",
+        "240"
+      ],
+      "slot": "default",
+      "count": {
+        "per_slot": 1
+      }
+    }
+  ]
+}

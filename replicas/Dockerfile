@@ -77,8 +77,8 @@ USER fluxuser
 WORKDIR /home/fluxuser/
 COPY ./scripts/entrypoint.sh ./scripts/job.py ./
 COPY --chown=fluxuser:fluxuser \
-    ./cosched_config/test-jobspec.json \
-    ./cosched_config/config-moldability.toml \
+    ./moldable_config/test-jobspec.json \
+    ./moldable_config/config-moldability.toml \
     ./cosched_config/config.toml \
     ./cosched_config/simple-socket.jgf \
     ./cosched_config/cluster.jgf \
